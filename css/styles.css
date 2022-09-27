@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --accent-color: #2196F3;
+    --background-color: #2F303A;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header .logo {
+    color: var(--accent-color)
+}
+
+.link.header {
+    color: #000000;
+}
+
+.site-nav .link {
+    color: var(--primary-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.contacts .link {
+    color: var(--secondary-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
