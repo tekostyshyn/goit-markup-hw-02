@@ -1,12 +1,16 @@
 :root {
     --primary-color: #212121;
     --secondary-color: #757575;
+    --tertiary-color: #FFFFFF;
+    --logo-color: #000000;
     --accent-color: #2196F3;
-    --background-color: #2F303A;
+    --bgd-color-primary: #F5F5F5; 
+    --bgd-color-secondary: #F5F4FA;
+    --bgd-color-accent: #2F303A;
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: var(--bgd-color-primary);
 }
 
 .list {
@@ -18,11 +22,11 @@ body {
 }
 
 .header {
-    background-color: #FFFFFF;
+    background-color: var(--tertiary-color);
 }
 
 .header .logo {
-    color: #000000;
+    color: var(--logo-color);
 }
 
 .logo-accent {
@@ -47,29 +51,33 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav .current {
+    color: var(--accent-color)
+}
+
 .hero {
-    background-color: var(--background-color);
+    background-color: var(--bgd-color-accent);
 }
 
 .title-hero {
-    color: #FFFFFF;
+    color: var(--tertiary-color);
 }
 
 .hero .button {
     background-color: var(--accent-color);
-    color: #FFFFFF; 
+    color: var(--tertiary-color); 
+}
+
+.subtitle {
+    color: var(--primary-color);
+}
+
+.description {
+    color: var(--secondary-color);
 }
 
 .title-features {
     visibility: hidden;
-}
-
-.subtitle-features {
-    color: var(--primary-color);
-}
-
-.features .description {
-    color: var(--secondary-color);
 }
 
 .title-works {
@@ -77,31 +85,27 @@ body {
 }
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--bgd-color-secondary);
+}
+
+.team-card {
+    background-color: var(--tertiary-color);
 }
 
 .title-team {
     color: var(--primary-color);
 }
 
-.subtitle-team {
-    color: var(--primary-color);
-}
-
-.team .description {
-    color: var(--secondary-color);
-}
-
 .footer {
-    background-color: var(--background-color);
+    background-color: var(--bgd-color-accent);
 }
 
 .footer .logo {
-    color: #FFFFFF;
+    color: var(--tertiary-color);
 }
 
 .address .map {
-    color: #FFFFFF;
+    color: var(--tertiary-color); 
 }
 
 .address .email,
@@ -118,3 +122,22 @@ body {
     color: var(--accent-color);
 }
 
+
+.title-portfolio {
+    visibility: hidden;
+}
+
+.portfolio .button {
+    background-color: var(--bgd-color-secondary);
+    color: var(--primary-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    background-color: var(--accent-color);
+    color: var(--tertiary-color); 
+}
+
+.portfolio-card {
+    background-color: var(--tertiary-color);
+}
