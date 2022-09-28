@@ -5,6 +5,10 @@
     --background-color: #2F303A;
 }
 
+body {
+    background-color: #F5F5F5;
+}
+
 .list {
     list-style-type: none;
 }
@@ -13,12 +17,16 @@
     text-decoration: none;
 }
 
-.header .logo {
-    color: var(--accent-color)
+.header {
+    background-color: #FFFFFF;
 }
 
-.link.header {
+.header .logo {
     color: #000000;
+}
+
+.logo-accent {
+    color: var(--accent-color)
 }
 
 .site-nav .link {
@@ -36,6 +44,77 @@
 
 .contacts .link:hover,
 .contacts .link:focus {
+    color: var(--accent-color);
+}
+
+.hero {
+    background-color: var(--background-color);
+}
+
+.title-hero {
+    color: #FFFFFF;
+}
+
+.hero .button {
+    background-color: var(--accent-color);
+    color: #FFFFFF; 
+}
+
+.title-features {
+    visibility: hidden;
+}
+
+.subtitle-features {
+    color: var(--primary-color);
+}
+
+.features .description {
+    color: var(--secondary-color);
+}
+
+.title-works {
+    color: var(--primary-color);
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.title-team {
+    color: var(--primary-color);
+}
+
+.subtitle-team {
+    color: var(--primary-color);
+}
+
+.team .description {
+    color: var(--secondary-color);
+}
+
+.footer {
+    background-color: var(--background-color);
+}
+
+.footer .logo {
+    color: #FFFFFF;
+}
+
+.address .map {
+    color: #FFFFFF;
+}
+
+.address .email,
+.address .phone {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link.email:hover,
+.link.email:focus,
+.link.phone:hover,
+.link.phone:focus,
+.link.map:hover,
+.link.map:focus {
     color: var(--accent-color);
 }
 
