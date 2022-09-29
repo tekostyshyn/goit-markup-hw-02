@@ -25,8 +25,8 @@ body {
     text-decoration: none;
 }
 
-.subtitle {
-    color: var(--primary-color);
+.button {
+    cursor: pointer;
 }
 
 .description {
@@ -34,8 +34,6 @@ body {
 }
 
 .title-section {
-    color: var(--primary-color);
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -131,6 +129,12 @@ body {
     letter-spacing: 0.06em;
 }
 
+.hero .button:hover,
+.hero .button:focus {
+    background-color: #188CE8;
+    text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.15);
+}
+
 /* section features */
 
 .features .subtitle {
@@ -140,7 +144,6 @@ body {
 }
 
 .features .description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -161,7 +164,6 @@ body {
 }
 
 .team .description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19; 
 }
@@ -181,7 +183,6 @@ body {
     color: var(--primary-white-color); 
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -191,7 +192,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -228,6 +228,7 @@ body {
 }
 
 .portfolio .subtitle {
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -235,7 +236,6 @@ body {
 }
 
 .portfolio .description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
