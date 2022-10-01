@@ -14,7 +14,6 @@ body {
     color: var(--primary-color);
 
     font-family: roboto, sans-serif;
-    letter-spacing: 0.03em;
 }
 
 .list {
@@ -29,14 +28,11 @@ body {
     cursor: pointer;
 }
 
-.description {
-    color: var(--secondary-color);
-}
-
 .title-section {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -52,16 +48,15 @@ body {
       margin: -1px;
   }
 
-.logo {
+/* logo header */
+.header-logo {
+    color: var(--logo-color);
+
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-}
-
-/* logo header */
-.header .logo {
-    color: var(--logo-color);
+    letter-spacing: 0.03em;
 }
 
 .logo-accent {
@@ -69,7 +64,7 @@ body {
 }
 
 /*  navigation header */
-.site-nav .link {
+.site-nav-link {
     color: var(--primary-color);
 
     font-family: inherit; 
@@ -79,17 +74,17 @@ body {
     letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
     color: var(--accent-color);
 }
 
-.site-nav .current {
+.current {
     color: var(--accent-color);
 }
 
 /* contacts header */
-.contacts .link {
+.contacts-link {
     color: var(--secondary-color);
 
     font-family: inherit; 
@@ -99,8 +94,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--accent-color);
 }
 
@@ -119,7 +114,7 @@ body {
     letter-spacing: 0.06em;
 }
 
-.hero .button {
+.hero-button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
@@ -129,23 +124,30 @@ body {
     letter-spacing: 0.06em;
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #188CE8;
     text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.15);
 }
 
 /* section features */
 
-.features .subtitle {
+.features-subtitle {
+    color: var(--primary-color);
+    text-transform: uppercase;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
-.features .description {
+.features-description {
+    color: var(--secondary-color);
+
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.17;
+    letter-spacing: 0.03em; 
 }
 
 /* section team */
@@ -157,15 +159,21 @@ body {
     background-color: var(--primary-white-color);
 }
 
-.team .subtitle {
+.team-subtitle {
+    color: var(--primary-color);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
-.team .description {
+.team-description {
+    color: var(--secondary-color);
+
     font-size: 16px;
     line-height: 1.19; 
+    letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -174,40 +182,50 @@ body {
 }
 
 /* footer logo */
-.footer .logo {
+.footer-logo {
     color: var(--primary-white-color);
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 /* footer address */
-.address .map {
+address {
+    font-style: normal;
+}
+
+.address-map {
     color: var(--primary-white-color); 
 
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
-.address .email,
-.address .phone {
+.address-email,
+.address-phone {
     color: rgba(255, 255, 255, 0.6);
 
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
-.link.email:hover,
-.link.email:focus,
-.link.phone:hover,
-.link.phone:focus,
-.link.map:hover,
-.link.map:focus {
+.address-email:hover,
+.address-email:focus,
+.address-phone:hover,
+.address-phone:focus,
+.address-map:hover,
+.address-map:focus {
     color: var(--accent-color);
 }
 
 /*  section portfolio */
 
-.portfolio .button {
+.portfolio-button {
     color: var(--primary-color);
 
     font-family: inherit;
@@ -215,10 +233,11 @@ body {
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: inherit;
+    letter-spacing: 0.03em;
 }
 
-.portfolio .button:hover,
-.portfolio .button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color); 
 }
@@ -227,15 +246,19 @@ body {
     background-color: var(--primary-white-color);
 }
 
-.portfolio .subtitle {
+.portfolio-subtitle {
     color: var(--primary-color);
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
-.portfolio .description {
+.portfolio-description {
+    color: var(--secondary-color);
+    
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.03em;
 }
